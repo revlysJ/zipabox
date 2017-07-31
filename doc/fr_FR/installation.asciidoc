@@ -1,0 +1,9 @@
+=== Installation et mise à jour du plugin
+
+==== Installation du plugin
+
+Après téléchargement du plugin sur votre Jeedom, il vous faut activer celui-ci.
+
+==== Mise à jour du plugin
+
+RAS

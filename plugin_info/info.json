@@ -1,0 +1,12 @@
+{
+	"id" : "zipabox",
+	"name" : "Zipabox",
+	"description" : "Plugin pour communiquer avec une zipabox.",
+	"licence" : "AGPL",
+	"author" : "Revlys",
+	"require" : "3.0",
+	"category" : "communication",
+	"hasDependency" : false,
+	"hasOwnDeamon" : false,
+	"maxDependancyInstallTime" : 0
+}
