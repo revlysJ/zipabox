@@ -1,4 +1,5 @@
-== Zipabox v0.5alpha
+Zipabox v0.5alpha
 
-=== Description
+Description
+
 Plugin permettant de communiquer avec la Zipabox et ses modules.
