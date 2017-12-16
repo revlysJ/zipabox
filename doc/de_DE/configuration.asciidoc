@@ -1,4 +1,4 @@
-=== Configuration du plugin
+=== Plugin Konfiguration
 
 Sur la page configuration du plugin
 
