@@ -9,7 +9,7 @@ Plugin permettant de communiquer avec la Zipabox et ses modules.
 include::installation.asciidoc[]
 
 '''
-== Configuration
+== Konfiguration
 include::configuration.asciidoc[]
 
 '''

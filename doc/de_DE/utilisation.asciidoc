@@ -1,6 +1,6 @@
 === Création des équipements
 
-La configuration des équipements Zipabox est accessible à partir du menu Plugins / Communication: 
+Die Konfiguration der Zipabox-Geräte kann über das Menü Plugins/Kommunikation aufgerufen werden : 
 
 image::../images/menuplugin.png[]
 
@@ -22,7 +22,7 @@ Une fois que vous cliquez sur le bouton + (Ajouter un nouvel équipement), et ap
 
 image::../images/equipements0.png[]
 
-Vous retrouvez ici toute la configuration de votre équipement : 
+Hier finden Sie die ganze Konfiguration des Geräts: 
 
 * *Nom de l'équipement* : nom de votre équipement Zipabox,
 * *Objet parent* : indique l'objet parent auquel appartient l'équipement,

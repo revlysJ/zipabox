@@ -1,6 +1,6 @@
 === Plugin Konfiguration
 
-Sur la page configuration du plugin
+Auf der Konfigurationsseite des Plugins
 
 image::../images/configuration.png[]
 
