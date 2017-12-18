@@ -17,7 +17,7 @@ include::configuration.asciidoc[]
 include::utilisation.asciidoc[]
 
 '''
-== Changelog
+== Änderungsprotokoll
 include::changelog.asciidoc[]
 
 '''
