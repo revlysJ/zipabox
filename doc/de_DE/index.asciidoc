@@ -13,7 +13,7 @@ include::installation.asciidoc[]
 include::configuration.asciidoc[]
 
 '''
-== Utilisation
+== Verwendung
 include::utilisation.asciidoc[]
 
 '''

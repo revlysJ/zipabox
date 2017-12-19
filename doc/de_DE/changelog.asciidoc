@@ -6,4 +6,4 @@
 
 === 21/07/2017
 
-- Création du plugin Zipabox.
+- Erstellung des Zipabox Plugins.
