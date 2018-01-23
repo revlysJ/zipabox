@@ -229,8 +229,13 @@ class zipabox extends eqLogic {
 
 		// Obligatoire pour eviter les "duplicate entry"
 		$Nuuid = str_replace('-', '', $uuid);
-		$NewCmdNameA = $vv['name'] . '_a_' . $Nuuid;
-		$NewCmdNameI = $vv['name'] . '_i_' . $Nuuid;
+		// on verifie la longueur du nom
+		$NewCmdName = $vv['name'];
+		$NewCmdNameLen = strlen($NewCmdName) + 3 + strlen($Nuuid);
+		if ( $NewCmdNameLen > 45 ) $NewCmdName = substr($vv['name'] , 0 , 42 - strlen($Nuuid));
+		
+		$NewCmdNameA = $NewCmdName . '_a_' . $Nuuid;
+		$NewCmdNameI = $NewCmdName . '_i_' . $Nuuid;
 		$ActionUUID = 'ZI_' . $zipabox_id . '_a_' . $Nuuid;
 		$InfoUUID = 'ZI_' . $zipabox_id . '_i_' . $Nuuid;
 
