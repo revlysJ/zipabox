@@ -207,7 +207,11 @@ class zipabox extends eqLogic {
 			if ($object_id !== null) $zipabox->setObject_id($object_id); // parent
 			$zipabox->setIsEnable(1);
 			$zipabox->setIsVisible(1);
+			
+			// on verifie la longueur du nom
+			if (strlen($name) > 127) $name = substr($name , 0 , 126);
 			$zipabox->setName($name);
+			
 			$zipabox->setConfiguration('zipabox_id' , $zipaboxID);
 			$zipabox->setConfiguration('uuid' , $uuid);
 			$zipabox->save();
@@ -232,7 +236,7 @@ class zipabox extends eqLogic {
 		// on verifie la longueur du nom
 		$NewCmdName = $vv['name'];
 		$NewCmdNameLen = strlen($NewCmdName) + 3 + strlen($Nuuid);
-		if ( $NewCmdNameLen > 45 ) $NewCmdName = substr($vv['name'] , 0 , 42 - strlen($Nuuid));
+		if ( $NewCmdNameLen > 45 ) $NewCmdName = substr($vv['name'] , 0 , 41 - strlen($Nuuid));
 		
 		$NewCmdNameA = $NewCmdName . '_a_' . $Nuuid;
 		$NewCmdNameI = $NewCmdName . '_i_' . $Nuuid;
