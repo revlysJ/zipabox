@@ -93,15 +93,3 @@ Ce sont ceux par défaut de Jeedom.
 Les widgets desktop ressemblent à cela :
 
 ![image06](../images/desktop_widget.png)
-
-
-## 31/07/2017
-
-- Ajout de screenshots pour le market.
-- 1er commit sur GitHub.
-- ébauche de la doc.
-
-## 21/07/2017
-
-- Création du plugin Zipabox.
-
