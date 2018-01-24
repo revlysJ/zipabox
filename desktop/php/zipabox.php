@@ -44,6 +44,18 @@ foreach ($eqLogics as $eqLogic) {
 		<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#f89406">{{Import Modules}}</span>
 	</div>
   </div>
+  <legend><i class="fa fa-sitemap"></i> {{Mes controlleurs (Box)}}</legend>
+  <?php
+  foreach (zipabox::allzipabox() as $i => $name)
+  {
+	$opacity = (true) ? '' : jeedom::getConfiguration('eqLogic:style:noactive');
+	echo '<div class="cursor eqLogicAction" data-action="bt_zipabox" data-zipaboxid="' . $i . '" style="text-align: center; background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;' . $opacity . '" >';
+	echo '<img src="' . $plugin->getPathImgIcon() . '" height="105" width="95" />';
+	echo "<br>";
+	echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;">' . ucfirst($name) . '</span>';
+	echo '</div>';
+  }
+  ?>
   <legend><i class="fa fa-table"></i> {{Mes modules (endpoints)}}</legend>
 <div class="eqLogicThumbnailContainer">
 	<?php
@@ -70,7 +82,7 @@ foreach ($eqLogics as $eqLogic) {
 			<a class="btn btn-default eqLogicAction pull-right" data-action="gotoPluginConf"  title="{{Page de Configuration du plugin}}"><i class="fa fa-wrench"></i> </a>
 			<!-- <a class="btn btn-info eqLogicAction pull-right" data-action="bt_healthSpecific" title="{{Page de Santé du plugin}}"><i class="fa fa-medkit"></i> </a> -->
 			<a class="btn btn-info eqLogicAction pull-right bt_plugin_view_log" data-slaveid="-1" data-log="zipabox" title="{{Logs du plugin}}"><i class="fa fa-file"></i> </a>
-			<a href="https://jeedom.github.io/documentation/third_plugin/zipabox/fr_FR/index.html" target="_blank" class="btn btn-success eqLogicAction pull-right"  title="{{Lien vers la Documentation du plugin}}"><i class="fa fa-book"></i> </a>
+			<a href="https://github.com/revlysJ/zipabox/blob/master/docs/fr_FR/index.md" target="_blank" class="btn btn-success eqLogicAction pull-right"  title="{{Lien vers la Documentation du plugin}}"><i class="fa fa-book"></i> </a>
 			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8VRBWX5A5PM7Q"  target="_blank" class="btn btn-success eqLogicAction pull-right" title="{{Faire un don pour soutenir le développement du plugin. Merci.}}"><i class="fa fa-paypal"></i> </a>
 		</div>
   
@@ -131,6 +143,8 @@ foreach (object::all() as $object) {
 			<input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="uuid" placeholder="{{UUID du module (endpoint)}}" required/>
 		</div>
 	</div>
+	<?php //echo network::getNetworkAccess('dnsjeedom');
+	?>
 </fieldset>
 </form>
 </div>
