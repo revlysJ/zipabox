@@ -1,7 +1,6 @@
-# Zipabox v0.5alpha
-
 Description
 ===========
+Zipabox v0.5alpha
 
 Plugin permettant de communiquer avec la Zipabox et ses modules.
 
@@ -11,11 +10,11 @@ Installation et mise à jour du plugin
 
 - Installation du plugin
 
-Après téléchargement du plugin sur votre Jeedom, il vous faut activer celui-ci.
+   Après téléchargement du plugin sur votre Jeedom, il vous faut activer celui-ci.
 
 -  Mise à jour du plugin
 
-RAS
+   RAS
 
 
 Configuration du plugin
