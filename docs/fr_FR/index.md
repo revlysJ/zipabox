@@ -1,8 +1,8 @@
 Description
 ===========
-Zipabox v0.5alpha
+- **Zipabox v0.5alpha**
 
-Plugin permettant de communiquer avec la Zipabox et ses modules.
+   Plugin permettant de communiquer avec la Zipabox et ses modules.
 
 
 Installation et mise à jour du plugin
