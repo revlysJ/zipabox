@@ -96,13 +96,13 @@ Vous avez 2 boutons permettant d'ajouter manuellement des commandes action ou in
 > 
 > Le champ UUID est obligatoire, et correspond à celui de l'attribut du module dans la Zipabox.
 
-Le champ URL (http_request) peut vous permmttre de créer une régle push http_request  sur événement dans la Zipabox.
-Cela est utile si la mise à jour automatique des infos toutes les minutes, n'est pas assez souvent pour vous.
-*IP_Jeedom:Port* doit être remplacé par l'adresse d'accés à votre Jeedom depuis internet.
+Le champ URL (http_request) peut vous permettre de créer une régle push http_request  sur événement dans la Zipabox.  
+Cela est utile si la mise à jour automatique des infos toutes les minutes, n'est pas assez souvent pour vous.  
+*IP_Jeedom:Port* doit être remplacé par l'adresse d'accés à votre Jeedom depuis internet.  
 L'idéal dans ce cas étant d'utiliser les DNS fournis par Jeedom.
 
-Widgets
-=======
+## Widgets
+
 
 Ce sont ceux par défaut de Jeedom.
 
