@@ -101,8 +101,8 @@ Cela est utile si la mise à jour automatique des infos toutes les minutes, n'es
 *IP_Jeedom:Port* doit être remplacé par l'adresse d'accés à votre Jeedom depuis internet.  
 L'idéal dans ce cas étant d'utiliser les DNS fournis par Jeedom.
 
-## Widgets
-
+Widgets
+=======
 
 Ce sont ceux par défaut de Jeedom.
 
