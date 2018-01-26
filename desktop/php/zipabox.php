@@ -82,8 +82,7 @@ foreach ($eqLogics as $eqLogic) {
 			<a class="btn btn-default eqLogicAction pull-right" data-action="gotoPluginConf"  title="{{Page de Configuration du plugin}}"><i class="fa fa-wrench"></i> </a>
 			<!-- <a class="btn btn-info eqLogicAction pull-right" data-action="bt_healthSpecific" title="{{Page de Santé du plugin}}"><i class="fa fa-medkit"></i> </a> -->
 			<a class="btn btn-info eqLogicAction pull-right bt_plugin_view_log" data-slaveid="-1" data-log="zipabox" title="{{Logs du plugin}}"><i class="fa fa-file"></i> </a>
-			<a href="https://github.com/revlysJ/zipabox/blob/master/docs/fr_FR/index.md" target="_blank" class="btn btn-success eqLogicAction pull-right"  title="{{Lien vers la Documentation du plugin}}"><i class="fa fa-book"></i> </a>
-			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8VRBWX5A5PM7Q"  target="_blank" class="btn btn-success eqLogicAction pull-right" title="{{Faire un don pour soutenir le développement du plugin. Merci.}}"><i class="fa fa-paypal"></i> </a>
+			<a href="https://revlysj.github.io/zipabox/fr_FR/index" target="_blank" class="btn btn-success eqLogicAction pull-right"  title="{{Lien vers la Documentation du plugin}}"><i class="fa fa-book"></i> </a>
 		</div>
   
   <ul class="nav nav-tabs" role="tablist">
