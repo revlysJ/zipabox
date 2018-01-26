@@ -9,6 +9,6 @@
 	"hasDependency" : false,
 	"hasOwnDeamon" : false,
 	"maxDependancyInstallTime" : 0,
-	"changelog" : "https://github.com/revlysJ/zipabox/blob/master/docs/#language#/changelog.md",
-	"documentation" : "https://github.com/revlysJ/zipabox/blob/master/docs/#language#/index.md"
+	"changelog" : "https://revlysj.github.io/zipabox/#language#/changelog.html",
+	"documentation" : "https://revlysj.github.io/zipabox/#language#/index"
 }
