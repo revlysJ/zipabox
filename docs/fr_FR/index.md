@@ -109,3 +109,7 @@ Ce sont ceux par défaut de Jeedom.
 Les widgets desktop ressemblent à cela :
 
 ![image06](../images/desktop_widget.png)
+
+Changelog
+=========
+[Changelog](changelog.md)
