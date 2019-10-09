@@ -23,10 +23,10 @@ try {
     if (!isConnect('admin')) {
         throw new Exception(__('401 - Accès non autorisé', __FILE__));
     }
-    
+
     ajax::init();
 
- 	if (init('action') == 'bt_import') 
+ 	if (init('action') == 'bt_import')
     {
 		if (init('zipaboxID') != '')
 		{
@@ -50,7 +50,7 @@ try {
 						$room_name = strtolower($rooms[$v['room']]);
 						zipabox::log( 'debug', '$room_name [ ' . $v['room'] . ' ] => ' . $room_name);
 
-						foreach (object::all() as $object) 
+						foreach (jeeObject::all() as $object)
 						{
 							if (strtolower($object->getName()) ==  $room_name)
 							{
@@ -59,26 +59,26 @@ try {
 							}
 						}
 					}
-					
+
 					$t .= $v['name'] . ' = ' . $v['uuid'] . '<br>';
 					$EqLogicID = zipabox::CreateEqLogic($v['name'], init('zipaboxID'), $v['uuid'], $object_id);
-					
+
 					// Création des commandes
 					$rr = json_decode(zipabox::CallZipabox(init('zipaboxID'), 'endpoints/' .$v['uuid'] . '?attributes=true'), true);
 					zipabox::log( 'debug', '$rr 1 => ' . json_encode($rr));
 					zipabox::log( 'debug', '$rr[attributes] 2 => ' . json_encode($rr['attributes']));
-					
+
 					$rrr = $rr['attributes'];
 					//$rr = json_decode(zipabox::CallZipabox(init('zipaboxID'), 'attributes/' .$v['uuid'] . '?definition=true&value=true'), true);
 					//zipabox::log( 'debug', 'CallZipabox => attributes/' .$v['uuid'] . '?definition=true&value=true');
-					if (!is_array($rrr)) 
+					if (!is_array($rrr))
 					{
 						zipabox::log( 'debug', "ENDPOINTS,ATTRIBUTES-2-La réponse de la Zipabox n'est pas conforme (not an array).");
 						continue;
 					}
 					$i = 0;
 					foreach($rrr as $vv)
-					{						
+					{
 						zipabox::log( 'debug', 'BCLE CMD i ' . $i .' => ' . json_encode($vv));
 						if (isset($vv['name']) && isset($vv['uuid']))
 						{
@@ -102,8 +102,8 @@ try {
 			ajax::success($t);
 		}
 		else ajax::error('Aucune Zipabox de choisie.');
-	}   
-	
+	}
+
     throw new Exception(__('Aucune méthode correspondante à : ', __FILE__) . init('action') . ' zipaboxID = ' . init('zipaboxID'));
     /*     * *********Catch exeption*************** */
 } catch (Exception $e) {

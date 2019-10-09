@@ -28,19 +28,19 @@ if (!isConnect()) {
 				<label class="col-lg-5 control-label">{{Activer les logs}}</label>
 				<div class="col-lg-5">
 					<input type="checkbox" class="configKey " data-l1key="ActiveLog" />
-				</div>            
+				</div>
 		</div>
 		<div class="form-group" >
 				<label class="col-lg-5 control-label">{{Nombre de Zipabox}}</label>
 				<div class="col-lg-5">
 					<input type="number" class="configKey " data-l1key="ZiNumber" />
-				</div>            
+				</div>
 		</div>
   </fieldset>
 </form>
-<div class="panel panel-primary">
+<div class="panel panel-warning">
 	<div class="panel-heading">
-		<h3 class="panel-title"><i class="fa fa-usb"></i> Vos Zipabox
+		<h3 class="panel-title"><i class="fab fa-usb"></i></i> Vos Zipabox
 		</h3>
 	</div>
 	<div class="panel-body">

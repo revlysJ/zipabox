@@ -4,11 +4,11 @@
 	"description" : "Plugin pour communiquer avec une zipabox.",
 	"licence" : "AGPL",
 	"author" : "Revlys",
-	"require" : "3.0",
+	"require" : "3.3",
 	"category" : "communication",
 	"hasDependency" : false,
 	"hasOwnDeamon" : false,
 	"maxDependancyInstallTime" : 0,
-	"changelog" : "https://revlysj.github.io/zipabox/#language#/changelog.html",
+	"changelog" : "https://revlysj.github.io/zipabox/#language#/changelog",
 	"documentation" : "https://revlysj.github.io/zipabox/#language#/index"
 }

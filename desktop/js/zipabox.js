@@ -14,6 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
+ $('.eqLogicAction[data-action=bt_zipabox]').on('click',function(){
+ if($('#md_modal').is(':visible')){
+   $('#md_modal2').dialog({title: "{{Informations sur la Zipabox}}"});
+   $('#md_modal2').load('index.php?v=d&plugin=zipabox&modal=box&zipaboxID=' +$(this).attr('data-zipaboxid')).dialog('open');
+ }else{
+   $('#md_modal').dialog({title: "{{Informations sur la Zipabox}}"});
+   $('#md_modal').load('index.php?v=d&plugin=zipabox&modal=box&zipaboxID=' +$(this).attr('data-zipaboxid')).dialog('open');
+ }
+});
  $('#bt_graphEqLogic').off('click').on('click', function () {
   $('#md_modal').dialog({title: "{{Graphique de lien}}"});
   $("#md_modal").load('index.php?v=d&modal=graph.link&filter_type=eqLogic&filter_id='+$('.eqLogicAttr[data-l1key=id]').value()).dialog('open');
@@ -126,7 +135,7 @@ if (init(_cmd.type) == 'action') {
 	tr += '<input class="cmdAttr form-control input-sm" data-l1key="name" placeholder="{{Nom}}">';
     tr += '</div>';
     tr += '</div>';
-	
+
     tr += '<div class="row">';
     tr += '<div class="col-sm-5">';
 	tr += '<input class="cmdAttr form-control type input-sm" data-l1key="type" value="action" disabled style="margin-bottom : 5px;" />';
@@ -136,18 +145,18 @@ if (init(_cmd.type) == 'action') {
     tr += '<input class="cmdAttr" data-l1key="configuration" data-l2key="zipaboxAction" value="1" style="display:none;" >';
     tr += '</div>';
     tr += '</div>';
-	
+
     tr += '<select class="cmdAttr form-control tooltips input-sm" data-l1key="value" style="display : none;margin-top : 5px;margin-right : 10px;" title="{{La valeur de la commande vaut par défaut la commande}}">';
     tr += '<option value="">Aucune</option>';
     tr += '</select>';
     tr += '<br></td>';
-	
+
     // tr += '<td>';
     // tr += '<input class="cmdAttr form-control type input-sm" data-l1key="type" value="action" disabled style="margin-bottom : 5px;" />';
     // tr += '<span class="subType" subType="' + init(_cmd.subType) + '"></span>';
     // tr += '<input class="cmdAttr" data-l1key="configuration" data-l2key="zipaboxAction" value="1" style="display:none;" >';
     // tr += '</td>';
-	
+
     tr += '<td>';
     tr += '<input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="uuid" placeholder="{{uuid attribut}}" style="margin-bottom : 5px;width : 70%; display : inline-block;" />';
 
