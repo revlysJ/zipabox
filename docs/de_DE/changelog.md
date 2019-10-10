@@ -1,6 +1,11 @@
 Changelog Github :
 <https://github.com/revlysJ/zipabox/commits/master>
 
+09/10/2019
+---
+
+- Compatibilité Jeedom V4.
+
 24/01/2018
 ---
 
@@ -17,4 +22,3 @@ Changelog Github :
 ---
 
 - Création du plugin Zipabox.
-
